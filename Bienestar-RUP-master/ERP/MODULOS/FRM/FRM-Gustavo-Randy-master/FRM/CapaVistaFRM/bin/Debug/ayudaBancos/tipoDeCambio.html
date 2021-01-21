@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+
+    <style>
+        .main {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: auto;
+            width: 90%;
+            height: auto;
+            background-color: white;
+        }
+
+        .header {
+            width: 90%;
+            height: auto;
+            color: black;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .footer {
+            background-color: ghostwhite;
+        }
+
+        h1 {
+            margin: 5%;
+            text-align: center;
+        }
+
+        .logo {
+            margin-right: 10%;
+            width: 250px;
+            height: 125px;
+        }
+
+        #index {
+            text-align: center;
+
+        }
+
+        a {
+            color: black;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .text {
+            height: auto;
+            width: 100%;
+            text-align: justify;
+        }
+
+        .img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/Gus657/Imagenes/master/risko.jpg" alt="RISKO" class="logo">
+            <h1>Tipo De Cambio</h1>
+        </div>
+        <br>
+
+        <h2 id="index">Índice</h2>
+        <ul>
+            <li><a href="#T1">Objetivo</a></li>
+            <li><a href="#T2">Ventana (Form)</a></li>
+            <li><a href="#T3">Proceso</a></li>
+        </ul>
+        <br>
+
+        <div class="content">
+            <h2 id="T1">Objetivo</h2>
+            <p class="text">
+                El objetivo de esta ventana es obtener el tipo de cambio al día entre las divisas previamente
+                seleccionadas. Esto con el fin de no utilizar un navegador web sino tener dichos datos dentro del mismo
+                sistema.
+            </p>
+            <br>
+
+            <h2 id="T2">Ventana (Form)</h2>
+            <p class="text">
+                La ventana de Tipo de Cambio esta estructurada de la siguiente manera (como se observa en la imágen).
+                En esta captura podemos ver una interfaz simple y sencilla de utilizar.
+            </p>
+            <center>
+                <img src="img/tipoDeCambio.PNG" alt="IMG" class="img">
+            </center>
+            <br>
+
+            <h2 id="T3">Proceso</h2>            
+            <p class="text">
+                La ventaja anterior es sencilla de utilizar. El procedimiento es el siguiente:
+            </p>
+            <ul>
+                1. CONSULTA DE: seleccionamos la divisa base <br>
+                2. CONSULTA A: seleccionamos la divisa destino <br>
+                3. CONSULTAR: damos click en el botón Consultar y podremos observar el resultado al lado derecho <br>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <center>
+            <br>
+            <p>Risko Developers 2020</p>
+            <br>
+        </center>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+
+    <style>
+        .main {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: auto;
+            width: 90%;
+            height: auto;
+            background-color: white;
+        }
+
+        .header {
+            width: 90%;
+            height: auto;
+            color: black;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .footer {
+            background-color: ghostwhite;
+        }
+
+        h1 {
+            margin: 5%;
+            text-align: center;
+        }
+
+        .logo {
+            margin-right: 10%;
+            width: 250px;
+            height: 125px;
+        }
+
+        #index {
+            text-align: center;
+
+        }
+
+        a {
+            color: black;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .text {
+            height: auto;
+            width: 100%;
+            text-align: justify;
+        }
+
+        .img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/Gus657/Imagenes/master/risko.jpg" alt="RISKO" class="logo">
+            <h1>Movimientos Bancarios - Encabezado</h1>
+        </div>
+        <br>
+
+        <h2 id="index">Índice</h2>
+        <ul>
+            <li><a href="#T1">Objetivo</a></li>
+            <li><a href="#T2">Ventana (Form)</a></li>
+            <li><a href="#T3">Proceso</a></li>
+        </ul>
+        <br>
+
+        <div class="content">
+            <h2 id="T1">Objetivo</h2>
+            <p class="text">
+                El objetivo de esta ventaja es seleccionar cuenta bancaria donde deseamos registrar movimientos.
+            </p>
+            <br>
+
+            <h2 id="T2">Ventana (Form)</h2>
+            <p class="text">
+                La ventaja de movimientos bancarios esta estructurado de la siguiente manera (como
+                se observa en la imágen). En esta captura podemos encontrar una única opción para seleccionar una cuenta
+                bancaria y el botón siguiente.
+            </p>
+            <center>
+                <img src="img/movBankEncab.PNG" alt="IMG" class="img">
+            </center>
+            <br>
+
+            <h2 id="T3">Proceso</h2>
+            <p class="text">
+                En la imágen anterior observamos un ComboBox y un Botón. El procedimiento es el siguiente:
+            </p>
+            <ul>
+                1. SELECCIONAR: debemos seleccionar la cuenta bancaria que deseamos afecta <br>
+                2. SIGUIENTE: luego damos click en el botón siguiente y se abrirá una nueva ventana <br>
+            </ul>
+
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <center>
+            <br>
+            <p>Risko Developers 2020</p>
+            <br>
+        </center>
+    </div>
+</body>
+
+</html>

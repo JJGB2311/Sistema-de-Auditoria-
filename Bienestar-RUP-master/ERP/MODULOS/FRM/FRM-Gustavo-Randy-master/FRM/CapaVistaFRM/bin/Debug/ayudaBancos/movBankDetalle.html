@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+
+    <style>
+        .main {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: auto;
+            width: 90%;
+            height: auto;
+            background-color: white;
+        }
+
+        .header {
+            width: 90%;
+            height: auto;
+            color: black;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .footer {
+            background-color: ghostwhite;
+        }
+
+        h1 {
+            margin: 5%;
+            text-align: center;
+        }
+
+        .logo {
+            margin-right: 10%;
+            width: 250px;
+            height: 125px;
+        }
+
+        #index {
+            text-align: center;
+
+        }
+
+        a {
+            color: black;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .text {
+            height: auto;
+            width: 100%;
+            text-align: justify;
+        }
+
+        .img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/Gus657/Imagenes/master/risko.jpg" alt="RISKO" class="logo">
+            <h1>Movimientos Bancarios - Detalles</h1>
+        </div>
+        <br>
+
+        <h2 id="index">Índice</h2>
+        <ul>
+            <li><a href="#T1">Objetivo</a></li>
+            <li><a href="#T2">Ventana (Form)</a></li>
+            <li><a href="#T3">Proceso</a></li>
+        </ul>
+        <br>
+
+        <div class="content">
+            <h2 id="T1">Objetivo</h2>
+            <p class="text">
+                El objetivo es realizar diferentes operaciones con la cuenta seleccionada anteriormente y dejarlas
+                registradas para su posterior análisis. Estas operaciones pueden ser un Cargo o un Abono, es decir, van
+                a sumar o restar el saldo de la cuenta bancaria.
+            </p>
+            <br>
+
+            <h2 id="T2">Ventana (Form)</h2>
+            <p class="text">
+                La ventaja de movimientos bancarios esta estructurado de la siguiente manera (como
+                se observa en la imágen). En esta captura podemos encontrar ejemplos de movimientos previamente
+                realizados.
+            </p>
+            <center>
+                <img src="img/movBankDetalle.PNG" alt="IMG" class="img">
+            </center>
+
+            <br>
+
+            <h2 id="T3">Proceso</h2>
+            <h3>Encabezado</h3>
+            <center>
+                <img src="img/movBankDetalle1.PNG" alt="IMG" class="img">
+            </center>
+            <p class="text">
+                En la imágen anterior observamos un GroupBox que contiene detalles sobre la cuenta antes seleccionada.
+            </p>
+            <br>
+            <h3>Detalle</h3>
+            <center>
+                <img src="img/movBankDetalle2.PNG" alt="IMG" class="img">
+            </center>
+            <p class="text">
+                En la imágen anterior tenemos el formulario que debemos llenar para registrar un movimiento.
+            </p>
+            <ul>
+                1. TIPO: seleccionamos el tipo de movimiento <br>
+                2. FECHA: seleccionamos la fecha en que se realiza el movimiento <br>
+                3. NO. DE REFERENCIA: ingresamos el número de referencia del documento <br>
+                4. BENEFICIARIO: en esta parte tenemos 2 opciones. Si el Beneficiario ya existe debemos usar el
+                ComboBox, sino damos click en el CheckBox "No Registrado" e ingresamos datos del Beneficiario. <br>
+                5. DESCRIPCIÓN: damos una breve descripción del movimiento <br>
+                6. CARGO/ABONO: seleccionamos dependiendo del tipo de movimiento, si resta es Cargo y si suma es Abono
+                <br>
+                7. MONTO: ingresamos la cantidad o monto del movimiento. Puede ser entero (100) o decimal (153.50) <br>
+                8. REGISTRAR: por último damos click en el botón registrar <br>
+            </ul>
+            <br>
+
+            <h3>Detalle de movimientos</h3>
+            <center>
+                <img src="img/movBankDetalle3.PNG" alt="IMG" class="img">
+            </center>
+            <p class="text">
+                En la imágen anterior podremos observar cada uno de los movimientos registrados. Y, en la parte
+                inferior, tendremos el total de Cargos, Abonos y el diferencial (diferencia abosluta entre los Cargos y
+                los
+                Abonos).
+            </p>
+            <br>
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <center>
+            <br>
+            <p>Risko Developers 2020</p>
+            <br>
+        </center>
+    </div>
+</body>
+
+</html>

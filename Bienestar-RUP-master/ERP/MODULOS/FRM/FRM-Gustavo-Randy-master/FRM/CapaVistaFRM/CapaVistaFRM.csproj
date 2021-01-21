@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21B4D8C7-AA0F-4FF8-BCA0-A0286A0DE701}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaVistaFRM</RootNamespace>
+    <AssemblyName>CapaVistaFRM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CapaDatos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\Seguridad\CapaDatos\bin\Debug\CapaDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDeDiseno, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\Navegador\CapaDeDiseno\bin\Debug\CapaDeDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDiseno">
+      <HintPath>..\..\DLLS\Seguridad\CapaDiseno\bin\Debug\CapaDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp">
+      <HintPath>..\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Polizas">
+      <HintPath>..\..\DLLS\dd-polizas-master\Polizas\Polizas\bin\Debug\Polizas.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="consultar_conciliacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultar_conciliacion.Designer.cs">
+      <DependentUpon>consultar_conciliacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conciliacion_bancaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conciliacion_bancaria.Designer.cs">
+      <DependentUpon>conciliacion_bancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="balance_general.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="balance_general.Designer.cs">
+      <DependentUpon>balance_general.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cuentas_contables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cuentas_contables.Designer.cs">
+      <DependentUpon>cuentas_contables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="libro_Mayor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="libro_Mayor.Designer.cs">
+      <DependentUpon>libro_Mayor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mov_banc_encabezado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mov_banc_encabezado.Designer.cs">
+      <DependentUpon>mov_banc_encabezado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formato.Designer.cs">
+      <DependentUpon>formato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="libro_Diario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="libro_Diario.Designer.cs">
+      <DependentUpon>libro_Diario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_tipos_poliza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_tipos_poliza.Designer.cs">
+      <DependentUpon>mantenimiento_tipos_poliza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_tipos_cuentas_contables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_tipos_cuentas_contables.Designer.cs">
+      <DependentUpon>mantenimiento_tipos_cuentas_contables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_bancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_bancos.Designer.cs">
+      <DependentUpon>mantenimiento_bancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_chequeras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_chequeras.Designer.cs">
+      <DependentUpon>mantenimiento_chequeras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_cuentas_bancarias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_cuentas_bancarias.Designer.cs">
+      <DependentUpon>mantenimiento_cuentas_bancarias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_monedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_monedas.Designer.cs">
+      <DependentUpon>mantenimiento_monedas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movimientos_bancarios_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movimientos_bancarios_2.Designer.cs">
+      <DependentUpon>movimientos_bancarios_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repoCuentasBancarias.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>repoCuentasBancarias.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reporteCuentasBancarias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporteCuentasBancarias.Designer.cs">
+      <DependentUpon>reporteCuentasBancarias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="revision_presupuestaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="revision_presupuestaria.Designer.cs">
+      <DependentUpon>revision_presupuestaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI_FRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI_FRM.Designer.cs">
+      <DependentUpon>MDI_FRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movimientos_bancarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movimientos_bancarios.Designer.cs">
+      <DependentUpon>movimientos_bancarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_modulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_modulos.Designer.cs">
+      <DependentUpon>mantenimiento_modulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="tipo_de_cambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tipo_de_cambio.Designer.cs">
+      <DependentUpon>tipo_de_cambio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="actualizacion_de_polizas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="actualizacion_de_polizas.Designer.cs">
+      <DependentUpon>actualizacion_de_polizas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaControladorFRM\CapaControladorFRM.csproj">
+      <Project>{f0231c63-aa6a-4a30-b47f-a70a9c1895c3}</Project>
+      <Name>CapaControladorFRM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaModeloFRM\CapaModeloFRM.csproj">
+      <Project>{2c769e32-17f3-4943-a5aa-d4aa3e044427}</Project>
+      <Name>CapaModeloFRM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="consultar_conciliacion.resx">
+      <DependentUpon>consultar_conciliacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conciliacion_bancaria.resx">
+      <DependentUpon>conciliacion_bancaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="balance_general.resx">
+      <DependentUpon>balance_general.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cuentas_contables.resx">
+      <DependentUpon>cuentas_contables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="libro_Mayor.resx">
+      <DependentUpon>libro_Mayor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mov_banc_encabezado.resx">
+      <DependentUpon>mov_banc_encabezado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formato.resx">
+      <DependentUpon>formato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="libro_Diario.resx">
+      <DependentUpon>libro_Diario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_tipos_poliza.resx">
+      <DependentUpon>mantenimiento_tipos_poliza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_tipos_cuentas_contables.resx">
+      <DependentUpon>mantenimiento_tipos_cuentas_contables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_bancos.resx">
+      <DependentUpon>mantenimiento_bancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_chequeras.resx">
+      <DependentUpon>mantenimiento_chequeras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_cuentas_bancarias.resx">
+      <DependentUpon>mantenimiento_cuentas_bancarias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_monedas.resx">
+      <DependentUpon>mantenimiento_monedas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movimientos_bancarios_2.resx">
+      <DependentUpon>movimientos_bancarios_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repoCuentasBancarias.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repoCuentasBancarias.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporteCuentasBancarias.resx">
+      <DependentUpon>reporteCuentasBancarias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="revision_presupuestaria.resx">
+      <DependentUpon>revision_presupuestaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_FRM.resx">
+      <DependentUpon>MDI_FRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movimientos_bancarios.resx">
+      <DependentUpon>movimientos_bancarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_modulos.resx">
+      <DependentUpon>mantenimiento_modulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tipo_de_cambio.resx">
+      <DependentUpon>tipo_de_cambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="actualizacion_de_polizas.resx">
+      <DependentUpon>actualizacion_de_polizas.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-hacia-abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-hacia-arriba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mantenimientos.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conta.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\budget.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\allan\Desktop\Seguridad\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\allan\Desktop\Seguridad\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\allan\Desktop\Seguridad\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\allan\Desktop\Seguridad\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\allan\Desktop\Seguridad\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\allan\Desktop\Seguridad\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Conta\FRM\DLLS\Seguridad\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Conta\FRM\DLLS\Seguridad\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Conta\FRM\DLLS\Seguridad\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Conta\FRM\DLLS\Seguridad\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Conta\FRM\DLLS\Seguridad\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Conta\FRM\DLLS\Seguridad\CapaDatos\obj\Debug\CapaDatos.pdb

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+
+    <style>
+        .main {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: auto;
+            width: 90%;
+            height: auto;
+            background-color: white;
+        }
+
+        .header {
+            width: 90%;
+            height: auto;
+            color: black;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .footer {
+            background-color: ghostwhite;
+        }
+
+        h1 {
+            margin: 5%;
+            text-align: center;
+        }
+
+        .logo {
+            margin-right: 10%;
+            width: 250px;
+            height: 125px;
+        }
+
+        #index {
+            text-align: center;
+
+        }
+
+        a {
+            color: black;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .text {
+            height: auto;
+            width: 100%;
+            text-align: justify;
+        }
+
+        .img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/Gus657/Imagenes/master/risko.jpg" alt="RISKO" class="logo">
+            <h1>Mantenimiento - Monedas</h1>
+        </div>
+        <br>
+
+        <h2 id="index">Índice</h2>
+        <ul>
+            <li><a href="#T1">Objetivo</a></li>
+            <li><a href="#T2">Formato Moneda</a></li>
+            <li><a href="#T3">Mantenimiento</a></li>
+            <li><a href="#T4">Barra de Navegación</a></li>
+        </ul>
+        <br>
+
+        <div class="content">
+            <h2 id="T1">Objetivo</h2>
+            <p class="text">
+                El objetivo del mantenimiento de monedas es registrar el tipo de divisa con que la empresa trabaja y/o
+                puede realizar operaciones.
+            </p>
+            <br>
+
+            <h2 id="T2">Formato Moneda</h2>
+            <p class="text">
+                Si desea ingresar un nuevo registro debe consultar el siguiente link:
+                <a href="https://www.opcionesbinarias.site/siglas-de-las-divisas/" target="_blank"> ¡Click para ir al
+                    Sitio Web de Monedas!</a>
+                <center>
+                    <img src="img/linkMonedas.PNG" alt="Sitio Web de Monedas" class="img">
+                </center>
+
+                <br> En este sitio podrá consultar la moneda que desea ingresar y debe seguir el siguiente formato:
+                [Código] + "-" + [Nombre de a Moneda (sin espacios)]
+                <br><br> Ejemplo Formato: USD + "-" + DolarEstadounidense
+                <br><br> Ejemplo Registro: USD-DolarEstadounidense
+            </p>
+
+            <br>
+
+            <h2 id="T3">Mantenimiento</h2>
+            <p class="text">
+                El formulario para el mantenimiento de monedas esta estructurado de la siguiente manera (como
+                se observa en la imágen).
+                En esta captura podemos encontrar ejemplos de que datos ingresar.
+            </p>
+            <center>
+                <img src="img/mantenimientoMonedas.PNG" alt="IMG" class="img">
+            </center>
+            <br>
+
+            <h2 id="T4">Barra de Navegación</h2>
+            <center>
+                <img src="img/barraDetalle.PNG" alt="IMG" class="img">
+            </center>
+            <p class="text">
+                La barra de navegacion nos permite realizar diferentes operaciones dentro del mantenimiento.
+                Las opciones son las siguiente:
+            </p>
+            <ul>
+                1. NUEVO: insertar un nuevo registro <br>
+                2. MODIFICAR: modificar un registro existente <br>
+                3. GUARDAR: guardar el nuevo registro <br>
+                4. CANCELAR: cancelar una operación <br>
+                5. ELIMINAR: eliminar un registro existente <br>
+                6. ACTUALIZAR: actualizar la tabla de registros <br>
+                7. PRIMERO: ir al primer elemento de la tabla <br>
+                8. ANTERIOR: ir al registro anterior <br>
+                9. SIGUIENTE: ir al siguiente registro <br>
+                10. ÚLTIMO: ir al último elemento de la tabla <br>
+                11. CERRAR: cerrar la ventana <br>
+                12. AYUDA: botón para abrir esta ayuda <br>
+            </ul>
+
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <center>
+            <br>
+            <p>Risko Developers 2020</p>
+            <br>
+        </center>
+    </div>
+</body>
+
+</html>

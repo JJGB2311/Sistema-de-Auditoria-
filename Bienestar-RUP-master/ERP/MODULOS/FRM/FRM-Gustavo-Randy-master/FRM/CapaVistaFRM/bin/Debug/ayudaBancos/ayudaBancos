@@ -1,0 +1,25 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=..\..\..\..\..\..\9.chm
+Contents file=contenidoBancos.hhc
+Default Window=ayudaBancos
+Display compile progress=No
+Language=0x100a Español (Guatemala)
+
+[WINDOWS]
+ayudaBancos="Ayuda Bancos FRM","contenidoBancos.hhc",,"mdi_bancos.html","mdi_bancos.html","cuentasBancarias.html","Cuentas Bancarias","tipoDeCambio.html","Tipo de Cambio",0x23520,,0xc387e,,,,,,,,0
+
+
+[FILES]
+bancos.html
+cuentasBancarias.html
+modulos.html
+monedas.html
+movBankDetalle.html
+movBankEncab.html
+revisionDePresupuestos.html
+tipoDeCambio.html
+mdi_bancos.html
+
+[INFOTYPES]
+
